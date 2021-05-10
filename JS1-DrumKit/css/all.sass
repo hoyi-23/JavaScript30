@@ -1,0 +1,36 @@
+@import "reset"
+body
+    background-image: url(../background.jpg)
+    background-position: bottom center
+    background-size: cover
+.keys
+    max-width: 1280px
+    margin: 0 auto
+    display: flex
+    flex: 1
+    min-height: 100vh
+    align-items: center
+    justify-content: center
+    .key
+        border: .4rem solid black
+        border-radius: .5rem
+        margin: 1rem
+        font-size: 1.5rem
+        padding: 1rem .5rem
+        width: 10rem
+        text-align: center
+        color: white
+        background: rgba(0,0,0,0.4)
+        text-shadow: 0 0 .5rem black
+        display: flex
+        flex-direction: column
+        transition: all 0.07s
+        kbd
+            font-weight: bold
+        .sound
+            color: #ffc600
+            font-size: 1rem
+    .playing
+        transform: scale(1.1)
+        border-color: #ffc600
+        box-shadow: 0 0 1rem #ffc600
