@@ -1,0 +1,43 @@
+@import "reset"
+html
+    background-image: url(/pexels-cátia-matos-1072179.jpg)
+    background-size: cover
+body
+    min-height: 100vh
+    max-width: 1280px
+    display: flex
+    flex: 1
+    justify-content: center
+    flex-direction: column
+    align-items: center
+    padding: 20px
+    margin: 0 auto
+    .clock
+        border: solid 1px white
+        width: 30rem
+        height: 30rem
+        margin: 50px auto
+        border-radius: 50%
+        border: solid 20px white
+        padding: 5px
+        .clock-face
+            width: 100%
+            height: 100%
+            position: relative
+            transform: translateY(-3px)
+            .hand
+                width: 50%
+                height: 6px
+                background-color: #fff
+                position: absolute
+                top: 50%
+                transform-origin: 100%
+                transform: rotate(90deg)
+                //transition: all 0.5s
+                transition-timing-function: cubic-bezier(0.01,-0.05, 0, 2.17)
+    audio
+        opacity: 20%
+    audio:hover
+        opacity: 80%
+
+    
