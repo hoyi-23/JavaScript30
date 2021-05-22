@@ -18,3 +18,6 @@
 <h2> Day 4 - Array Cardio </h2>
 <a href="https://hoyis-note.coderbridge.io/2021/05/16/JavaScript30-challenge-day4/">筆記</a>
 此次練習使用console運作
+
+<h2> Day 5 - Flex Panel Image Gallery</h2>
+<a href="https://hoyi-23.github.io/JavaScript30/JS5-Flex%20Panel%20Image%20Gallery/">Demo</a>
