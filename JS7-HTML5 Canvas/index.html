@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons%7CMaterial+Icons+Outlined%7CMaterial+Icons+Two+Tone%7CMaterial+Icons+Round%7CMaterial+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="./style/all.css">
+    <title>HTML5 Canvas</title>
+</head>
+<body>
+    <h2>Draw and Have Fun !!</h2>
+    <canvas id="myCanvas">你的浏览器不支持canvas,请升级你的浏览器</canvas>
+    <div class="drawBox">
+        <div class="drawTools">
+            <div class="drawTool">
+                <h3>筆觸大小</h3>
+                <ul class="sizing">
+                    <li class="sizeCircle" data-size="5"></li>
+                    <li class="sizeCircle" data-size="10"></li>
+                    <li class="sizeCircle" data-size="15"></li>
+                    <li class="sizeCircle" data-size="25"></li>
+                    <li class="sizeCircle" data-size="40"></li>
+                </ul>
+            </div>
+            <div class="drawTool">
+                <h3>顏色</h3>
+                <input id="color" class="color" type="color" value="#333">
+            </div>
+        </div>
+        <div class="eraseBox">
+            <a href="#" class="erase">Erase all !</a>
+        </div>
+    </div>  
+    <script src="all.js"></script>
+</body>
+</html>

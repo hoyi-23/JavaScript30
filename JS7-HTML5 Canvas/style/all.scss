@@ -1,0 +1,127 @@
+@import "reset";
+
+@mixin rectSize($n){
+    width: $n;
+    height: $n;
+}
+$primary: #ffc845;
+
+h2{
+    text-align: center;
+    font-size: 4rem;
+    padding: 3rem 0rem;
+    color: $primary;
+    font-weight: bold;
+}
+#myCanvas{
+    display: block;
+    border: solid 1px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+body{
+    background-color: #005670;
+}
+//調整drawBox位置
+.drawBox{
+    width: 50%;
+    margin: 0 auto;
+    padding: 2rem 0rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .drawTools{
+    display: flex;
+    flex-direction: column;
+    }
+    .eraseBox{
+        .erase{
+            position: relative;
+            display: block;
+            background-color: $primary;
+            color: #fff;
+            text-decoration: none;
+            padding: 1rem 2rem;
+            font-size: 1.5rem;
+            font-weight: bold;
+            transition: all .5s;
+        }
+    }
+}
+.drawTool{
+    padding: 2rem 0rem;
+    display: flex;
+    align-items: center;
+    h3{
+        font-size: 2rem;
+        font-weight: bold;
+        color: $primary;
+        padding-right: 2rem;
+    }
+    .sizing{
+        display: flex;
+        align-items: center;
+    }
+    .sizeCircle{
+        border-radius: 50%;
+        background-color: $primary;
+        margin: 0rem 1rem;
+    }
+}
+.sizeCircle:nth-child(1){
+    @include rectSize(0.5rem)
+}
+.sizeCircle:nth-child(2){
+    @include rectSize(0.75rem)
+}
+.sizeCircle:nth-child(3){
+    @include rectSize(1rem)
+}
+.sizeCircle:nth-child(4){
+    @include rectSize(1.5rem)
+}
+.sizeCircle:nth-child(5){
+    @include rectSize(2.5rem)
+}
+
+//erase 按鈕
+.erase:before{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    height: 10px;
+    width: 100%;
+    left: 5px;
+    transform: skewX(45deg);
+    background-color: #ff6a00;
+	transition: all .5s;
+}
+.erase:after{
+    content: "";
+    position: absolute;
+    right: -10px;
+    height: 100%;
+    width: 10px;
+    bottom: -5px;
+    transform: skewY(
+45deg
+);
+    background-color: #fe5000;
+	transition: all .5s;
+}
+
+.erase:active {
+    margin-left: 10px;
+    margin-top: 10px;
+        &::before {
+            bottom: -5px;
+            height: 5px;
+            left: 3px;
+        }
+    
+        &::after {
+            right: -5px;
+            width: 5px;
+            bottom: -3px;
+        }	
+}
