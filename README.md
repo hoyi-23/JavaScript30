@@ -1,5 +1,5 @@
 # JavaScript30
-練習來自<a href="https://javascript30.com/">Wes Bos的JS30</a
+練習來自<a href="https://javascript30.com/">Wes Bos的JS30</a>
 
 notice: 因為希望有多一點的創作練習，從第八日開始作品不再照著範例練習(但是主要知識的運用是一樣的)，若希望看到原作者的練習可以點上面的連結。
 
